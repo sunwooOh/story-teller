@@ -1,14 +1,58 @@
 # 뿅뿅
 
+## Language
+- **Learning to Generate Reviews and Discovering Sentiment**, 2017  
+Proposes a character(byte)-level language model, which has simplicity and generality.
+Uses multiplicative LSTM(mLSTM) instead of LSTM.
+- **Skip-thought Vectors**, Kiros et al., NIPS 2015  
+Learns representations of phrases/sentences/docs: trains a sentence encoder by predicting the preceding and following sentence.
+
 ## Object / Image retrieval
 - **Natural Language Object Retrieval**, CVPR'16 [[github](https://github.com/ronghanghu/natural-language-object-retrieval)] [[paper](https://arxiv.org/pdf/1511.04164.pdf)] [[project](http://ronghanghu.com/text_obj_retrieval)]
 - **Image Retrieval using Scene Graphs**, CVPR'15 [[paper](http://cs.stanford.edu/people/jcjohns/papers/cvpr2015/JohnsonCVPR2015.pdf)] [[dataset](http://imagenet.stanford.edu/internal/jcjohns/scene_graphs/sg_dataset.zip)] [[supplementary](http://cs.stanford.edu/people/jcjohns/cvpr15_supp/)]
 - **Particular Object Retrieval with Integral Max-pooling of CNN Activations**, ICLR'16 [[project-MATLAB code](http://cmp.felk.cvut.cz/~toliageo/soft.html)] [[paper](http://arxiv.org/pdf/1511.05879v2.pdf)] [[slides](http://imatge-upc.github.io/telecombcn-2016-dlcv/slides/D3L6-ranking.pdf)]
+- **Ranking and Retrieval of Image Sequences from Multiple Paragraph Queries**, CVPR'15  
+Uses SVM?
 
 ## Image / Video captioning
 - **End-to-end Concept Word Detection for Video Captioning, Retrieval, and Question Answering**, CVPR'17
 - **Sequence to Sequence -- Video to Text**, ICCV'15 [[paper](https://arxiv.org/abs/1505.00487)] [[tensorflow implementation](https://github.com/jazzsaxmafia/video_to_sequence)]
 - **From Captions to Visual Concepts and Back**, CVPR'15 [[github](https://github.com/s-gupta/visual-concepts)] [[paper](https://arxiv.org/abs/1411.4952)]
+### Storytelling
+- **Expressing an Image Stream with a Sequence of Natural Sentences**, NIPS'15  
+Takes a stream of photos as an input, outputs a sequence of sentences.
+Trains *Coherence recurrent convolutional network* (CRCN), which combines CNN, BiRNN, and entity-based local coherence model.
+CNN embeds the image, BiRNN generates natural sentences, and local coherence model smoothens the flow of sentences,
+in an unsupervised manner.
+Blog posts(20K posts, 140K images on NYC and Disneyland tour) as the dataset, since a travel logs usually have a series of photographs and corresponding descriptions.
+
+## Sentence Representation
+- **Distributed Representations of Sentences and Documents**, ICML'14  
+Neural net based unsupervised algorithm that learns fixed-length feature representation from variable-length passage.
+- **Doc2Vec** [[DL4J tutorial](https://deeplearning4j.org/doc2vec)] [[another tutorial](https://rare-technologies.com/doc2vec-tutorial/)] [[gensim doc2vec](https://radimrehurek.com/gensim/models/doc2vec.html)]
+
+## Generative Models
+### Painting
+- **A Neural Representation of Sketch Drawings**, 2017  
+`sketch-rnn`, an RNN that constructs stroke-based drawings. Trained with crude human-drawn images,
+which are represented by vectorized strokes. Plans to release the dataset.
+- **Portrait Drawing by Paul the Robot**, 2013
+- **Artist Agent: A Reinforcement Learning Approach to Automatic Stroke Generation in Oriental Ink Painting**, ICML'12
+
+### Handwritings/Characters
+- **Generating Sequences with Recurrent Neural Networks**, 2013
+- **Recurrent Net Dreams Up Fake Chinese Characters in Vector Format with TensorFlow**, 2015
+- **Drawing and Recognizing Chinese Characters with Recurrent Neural Networks**, 2016
+
+### Image Generation
+- **Parallel Multiscale Autoregressive Density Estimation**, 2017 [[paper](https://arxiv.org/pdf/1703.03664.pdf)]  
+Parallelized PixelCNN by breaking weak dependencies among pixels
+- **Conditional Image Generation with PixelCNN Decoders**, NIPS 2016
+
+## Autoencoders
+- **Auto-Encoding Variational Bayes**, 2013  
+Variational Autoencoder
+
 
 ## Datasets
 ### Movie related
@@ -19,6 +63,11 @@
 - **INRIA Holidays**
 - **Oxford Buildings, Oxford Building 105K**
 - **Univ. of Kentucky benchmark (UKB)**
+
+## Storytelling
+- **Visual Storytelling (SIND)**, NAACL'16 [[paper](https://arxiv.org/abs/1604.03968)] [[project page](http://visionandlanguage.net/VIST/)]
+- **Expressing an Image Stream with a Sequence of Natural Sentences (NYC, Disney)**, NIPS'15  
+
 
 ## Evaluation metrics
 - **Recall@1, Recall@5, Recall@10**: The percentage of GT in the first *k* retrieved objects.
