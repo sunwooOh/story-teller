@@ -72,3 +72,14 @@ Variational Autoencoder
 ## Evaluation metrics
 - **Recall@1, Recall@5, Recall@10**: The percentage of GT in the first *k* retrieved objects.
 - **Median Rank**
+
+## What to read next
+- Ian Goodfellow, Yoshua Bengio, Aaron Courville, **Deep Learning**, 2016.  
+Review on unsupervised representation learning
+- **Skip-thought Vectors**, Kiros et al. NIPS 2015  
+Trains a sentence encoder by predicting the preceding and following sentence.
+- **Understanding Neural Networks Through Representation Erasure**, Li et al., 2016  
+word2vec has small subsets of dimensions strongly associated with specific tasks
+- **Multiplicative LSTM for Sequence Modelling**, Krause et al, 2016 [[paper](https://arxiv.org/abs/1609.07959)]
+- **Recurrent Highway Networks** [[paper](https://arxiv.org/abs/1607.03474)]
+- **StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks**, 2016
