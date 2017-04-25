@@ -46,8 +46,10 @@ which are represented by vectorized strokes. Plans to release the dataset.
 
 ### Image Generation
 - **Parallel Multiscale Autoregressive Density Estimation**, 2017 [[paper](https://arxiv.org/pdf/1703.03664.pdf)]  
-Parallelized PixelCNN by breaking weak dependencies among pixels
+Parallelizes the Conditional PixelCNN by breaking weak dependencies among pixels
 - **Conditional Image Generation with PixelCNN Decoders**, NIPS 2016
+- **Pixel Recurrent Neural Networks**, ICLR 2016  
+Models the discrete probability of the raw pixel values using autoregressive image modeling.
 
 ## Autoencoders
 - **Auto-Encoding Variational Bayes**, 2013  
@@ -66,11 +68,17 @@ Variational Autoencoder
 
 ## Storytelling
 - **Visual Storytelling (SIND)**, NAACL'16 [[paper](https://arxiv.org/abs/1604.03968)] [[project page](http://visionandlanguage.net/VIST/)]
-- **Expressing an Image Stream with a Sequence of Natural Sentences (NYC, Disney)**, NIPS'15  
+- **Expressing an Image Stream with a Sequence of Natural Sentences (NYC, Disney)**, NIPS'15 [[github](https://github.com/cesc-park/CRCN)]
+
+## Others
+- **Neural Turing Machines**, 2014 [[paper](https://arxiv.org/abs/1410.5401)] [[unofficial slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf)]
+- **Hybrid Computing Using a Neural Network with Dynamic External Memory**, Nautre 2016 [[paper](https://www.nature.com/articles/nature20101.epdf?author_access_token=ImTXBI8aWbYxYQ51Plys8NRgN0jAjWel9jnR3ZoTv0MggmpDmwljGswxVdeocYSurJ3hxupzWuRNeGvvXnoO8o4jTJcnAyhGuZzXJ1GEaD-Z7E6X_a9R-xqJ9TfJWBqz)] [[code](https://github.com/deepmind/dnc)]  
+Differentiable neural computer.
+- [**Deep Learning Textbook**](http://www.deeplearningbook.org/), Ian Goodfellow
 
 
 ## Evaluation metrics
-- **Recall@1, Recall@5, Recall@10**: The percentage of GT in the first *k* retrieved objects.
+- **Recall@1, Recall@5, Recall@10**: The percentage of groundtruths in the top *k* retrieved objects.
 - **Median Rank**
 
 ## What to read next
