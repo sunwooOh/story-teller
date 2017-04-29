@@ -51,6 +51,10 @@ Parallelizes the Conditional PixelCNN by breaking weak dependencies among pixels
 - **Pixel Recurrent Neural Networks**, ICLR 2016  
 Models the discrete probability of the raw pixel values using autoregressive image modeling.
 
+### Image Translation
+- **Image-to-Image Translation with Conditional Adversarial Networks**, 2016 [[github](https://github.com/phillipi/pix2pix)] [[paper](https://arxiv.org/pdf/1611.07004v1.pdf)] [[project](https://phillipi.github.io/pix2pix/)] [[PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)]
+- **Cycle GAN**, 2017 [[github](https://github.com/junyanz/CycleGAN)] [[PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)] [[paper](https://arxiv.org/pdf/1703.10593.pdf)] [[project](https://junyanz.github.io/CycleGAN/)]
+
 ## Autoencoders
 - **Auto-Encoding Variational Bayes**, 2013  
 Variational Autoencoder
